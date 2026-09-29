@@ -4,7 +4,9 @@ Living list of things we **want to work on** and **could work on**. Check items 
 
 ## Near-term (next few weeks)
 
-- [ ] Finalize license and contribution guidelines
+- [x] Add MIT license
+- [x] Compile list of similar repositories (see `resources/related-repos.md`)
+- [ ] Finalize contribution guidelines
 - [ ] Expand `resources/projects.md` with 20–30 high-quality open-source civic/digital-gov AI projects
 - [ ] Add a first dataset: U.S. federal AI use-case inventory (OMB) normalized snapshot
 - [ ] Write a short methodology note on how we collect and attribute open information
@@ -41,3 +43,5 @@ Living list of things we **want to work on** and **could work on**. Check items 
 
 - [x] Create repository and initial structure
 - [x] Seed README, ROADMAP, and starter resource lists
+- [x] Add MIT license
+- [x] Compile list of similar repositories
