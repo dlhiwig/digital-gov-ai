@@ -33,7 +33,7 @@ This is the first concrete implementation project under the Digital Gov AI umbre
 
 ### 0.1 Target & access
 - [x] Confirm Elizabethtown as the pilot target.
-- [ ] Inventory the city's public document sources (ordinances page, agendas/minutes, permit portal, GIS).
+- [x] Inventory the city's public document sources (ordinances page, agendas/minutes, permit portal, GIS). See `docs/elizabethtown-source-inventory.md`.
 - [ ] Identify the county clerk / city clerk contact path for physical or higher-fidelity copies.
 - [ ] Decide storage backend: Mongo vs Azure Cosmos vs AWS DocumentDB (lean Mongo for the pilot).
 
