@@ -1,0 +1,12 @@
+# Fetcher — crawls the Elizabethtown Documents tree
+FROM python:3.12-slim
+
+WORKDIR /app
+COPY elizabethtown/fetcher/requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY elizabethtown/fetcher/ /app/fetcher/
+COPY docs/methodology.md /app/docs/methodology.md
+
+ENV PYTHONPATH=/app
+CMD ["python", "-m", "fetcher"]

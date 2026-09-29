@@ -1,0 +1,5 @@
+# Processor dependencies (skeleton)
+pymupdf>=1.23          # PDF text extraction
+pillow>=10.0           # image handling for OCR
+pytesseract>=0.3.10    # Tesseract wrapper
+pymongo>=4.6

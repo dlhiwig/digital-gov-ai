@@ -1,0 +1,53 @@
+# Elizabethtown civic data pipeline — local dev stack
+# Usage: docker compose up --build
+# Brings up MongoDB + (stub) fetcher, processor, search services.
+
+services:
+  db:
+    image: mongo:7
+    container_name: etown-db
+    ports:
+      - "27017:27017"
+    volumes:
+      - etown_mongo_data:/data/db
+    environment:
+      MONGO_INITDB_DATABASE: elizabethtown
+
+  fetcher:
+    build:
+      context: ..
+      dockerfile: elizabethtown/docker/Dockerfile.fetcher
+    container_name: etown-fetcher
+    env_file: ../.env
+    depends_on:
+      - db
+    volumes:
+      - ../data/raw/elizabethtown:/data/raw
+    profiles: ["tools"]
+
+  processor:
+    build:
+      context: ..
+      dockerfile: elizabethtown/docker/Dockerfile.processor
+    container_name: etown-processor
+    env_file: ../.env
+    depends_on:
+      - db
+    volumes:
+      - ../data/raw/elizabethtown:/data/raw
+      - ../data/processed/elizabethtown:/data/processed
+    profiles: ["tools"]
+
+  search:
+    build:
+      context: ..
+      dockerfile: elizabethtown/docker/Dockerfile.search
+    container_name: etown-search
+    env_file: ../.env
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+
+volumes:
+  etown_mongo_data:

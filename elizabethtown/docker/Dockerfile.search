@@ -1,0 +1,12 @@
+# Search — minimal API + tiny UI over the minutes index
+FROM python:3.12-slim
+
+WORKDIR /app
+COPY elizabethtown/search/requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY elizabethtown/search/ /app/search/
+
+ENV PYTHONPATH=/app
+EXPOSE 8000
+CMD ["python", "-m", "search"]
