@@ -15,6 +15,7 @@ This repository gathers publicly available information, datasets, tools, and pro
 ```
 .
 ├── README.md              # You are here
+├── LICENSE                # MIT — open for anyone to use
 ├── ROADMAP.md             # Things we want to work on / could work on
 ├── resources/             # Curated lists of existing open-source projects & data
 │   ├── projects.md
@@ -41,7 +42,7 @@ This repository gathers publicly available information, datasets, tools, and pro
 
 ## License
 
-TBD — likely MIT or CC-BY for the curated content. Data retains its original licenses.
+**MIT** — free to use, modify, and distribute. See [LICENSE](LICENSE).
 
 ## Contributing
 
