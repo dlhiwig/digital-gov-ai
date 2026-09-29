@@ -14,10 +14,15 @@ Living list of things we **want to work on** and **could work on**. Check items 
 
 ## Active project — Elizabethtown, KY pilot
 
-First concrete implementation: an AI-ready civic data pipeline for the City of Elizabethtown (Hardin County, KY). Full plan with phases and sub-phases: **[docs/elizabethtown-plan.md](docs/elizabethtown-plan.md)**.
+First concrete implementation: an AI-ready civic data pipeline for the City of Elizabethtown (Hardin County, KY). Full plan with phases and sub-phases: **[docs/elizabethtown-plan.md](docs/elizabethtown-plan.md)**. Detailed Phase 1 build plan: **[docs/elizabethtown-minutes-index.md](docs/elizabethtown-minutes-index.md)**.
 
-- [ ] **Phase 0 — Foundation:** source inventory, storage decision, Docker skeleton, one sample doc through the pipeline.
-- [ ] **Phase 1 — Vertical slice:** searchable index of the last ~2 years of city council minutes (OCR + extraction + query).
+- [x] **Phase 0.1 — Source inventory** committed (`docs/elizabethtown-source-inventory.md`).
+- [x] **Phase 1 build plan** committed (`docs/elizabethtown-minutes-index.md`) + Docker skeleton under `elizabethtown/`.
+- [ ] **Phase 0.2 — Skeleton:** fetcher + processor + store + search stubs, `docker-compose.yml`, `.env.example`.
+- [ ] **Phase 1.1 — Ingestion:** fetcher walks the Documents tree, downloads minutes, writes manifest (source URL + date + hash).
+- [ ] **Phase 1.2 — Processing:** Tesseract OCR + structured extraction (date, attendees, motions, votes, amounts, decisions).
+- [ ] **Phase 1.3 — Storage & query:** MongoDB raw + structured collections; minimal search endpoint + tiny UI.
+- [ ] **Phase 1.4 — Milestone:** searchable index of the last ~2 years of council minutes.
 - [ ] Phase 2+: ordinances, permits, GIS layers, meeting audio (sketched in the plan).
 
 ## Could work on (backlog / ideas)
@@ -55,3 +60,4 @@ First concrete implementation: an AI-ready civic data pipeline for the City of E
 - [x] Compile list of similar repositories
 - [x] Write methodology note
 - [x] Lock Elizabethtown, KY as the first implementation target and draft Phase 0 / Phase 1 plan
+- [x] Detail the Phase 1 minutes-index build (sources, tasks, data layout, risks) and scaffold the Dockerized pipeline
