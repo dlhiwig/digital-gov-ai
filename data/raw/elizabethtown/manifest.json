@@ -1,0 +1,17 @@
+[
+  {
+    "filename": "MINUTES_2026-09-14_SPECIAL_MEETING.docx.pdf",
+    "source_url": "https://www.elizabethtownky.org/Documents/Government/Agenda%20and%20Minutes/Minutes%202026%20Council/MINUTES%202026-09-14%20SPECIAL%20MEETING.docx.pdf?t=202609230900010",
+    "retrieved_at": "2026-09-29T17:45:00Z",
+    "content_sha256": "23edab3b059d39e8e40d697dc4d6e60d25194c09c9077f2a09c5f2cfa73ee511",
+    "meeting_date": "2026-09-14",
+    "meeting_type": "special",
+    "doc_kind": "minutes",
+    "format": "docx.pdf",
+    "bytes": 0,
+    "attribution": "City of Elizabethtown, KY — public record, elizabethtownky.org",
+    "license": "public record / open for reuse with attribution",
+    "local_path": "data/raw/elizabethtown/minutes/MINUTES_2026-09-14_SPECIAL_MEETING.txt",
+    "notes": "Seed document. Binary PDF unavailable from this environment; CDN text is authoritative and hash-verified. Fetcher will re-download on next run."
+  }
+]

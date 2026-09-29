@@ -1,0 +1,31 @@
+[
+  {
+    "doc_id": "23edab3b059d",
+    "meeting_date": "2026-09-14",
+    "meeting_type": "special",
+    "attendees": ["Tim Isaacs", "Lamar Jones", "Julia Springsteen", "Mika Tyler"],
+    "absent": ["Tony Bishop", "Marty Fulkerson"],
+    "motions": [
+      {"mover": "Council Member Springsteen", "seconder": "Council Member Isaacs"},
+      {"mover": "Council Member Isaacs", "seconder": "Council Member Springsteen"},
+      {"mover": "Council Member Jones", "seconder": "Council Member Tyler"},
+      {"mover": "Council Member Tyler", "seconder": "Council Member Isaacs"},
+      {"mover": "Council Member Springsteen", "seconder": "Council Member Isaacs"},
+      {"mover": "Council Member Tyler", "seconder": "Council Member Jones"},
+      {"mover": "Council Member Tyler", "seconder": "Council Member Springsteen"},
+      {"mover": "Council Member Isaacs", "seconder": "Council Member Tyler"},
+      {"mover": "Council Member Springsteen", "seconder": "Council Member Jones"}
+    ],
+    "ordinances": ["14-2026", "15-2026", "16-2026", "17-2026"],
+    "municipal_orders": ["66-2026", "67-2026"],
+    "dollar_amounts": [],
+    "decisions": [
+      "Motion passed 4-0.",
+      "Motion passed 4-0.",
+      "Motion passed 4-0."
+    ],
+    "raw_text": "ELIZABETHTOWN CITY COUNCIL\nSPECIAL MEETING MINUTES\nSEPTEMBER 14, 2026\n...",
+    "extraction_confidence": 0.7,
+    "notes": "Seed extraction from the September 14, 2026 special meeting. Regex-based; LLM-assisted extraction is the upgrade path."
+  }
+]

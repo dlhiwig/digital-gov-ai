@@ -1,11 +1,9 @@
-"""Entry point: python -m search
-
-Skeleton only. Implement FastAPI app with keyword search + date filter.
-"""
+"""Entry point: python -m search  ->  uvicorn search.app:app"""
+import uvicorn
 
 
 def main() -> None:
-    print("search: skeleton — implement FastAPI app")
+    uvicorn.run("search.app:app", host="0.0.0.0", port=8000, reload=False)
 
 
 if __name__ == "__main__":
