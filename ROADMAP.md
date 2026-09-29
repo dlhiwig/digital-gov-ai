@@ -9,8 +9,16 @@ Living list of things we **want to work on** and **could work on**. Check items 
 - [ ] Finalize contribution guidelines
 - [ ] Expand `resources/projects.md` with 20–30 high-quality open-source civic/digital-gov AI projects
 - [ ] Add a first dataset: U.S. federal AI use-case inventory (OMB) normalized snapshot
-- [ ] Write a short methodology note on how we collect and attribute open information
+- [x] Write a short methodology note on how we collect and attribute open information
 - [ ] Set up a simple issue template for "new resource" and "new dataset" suggestions
+
+## Active project — Elizabethtown, KY pilot
+
+First concrete implementation: an AI-ready civic data pipeline for the City of Elizabethtown (Hardin County, KY). Full plan with phases and sub-phases: **[docs/elizabethtown-plan.md](docs/elizabethtown-plan.md)**.
+
+- [ ] **Phase 0 — Foundation:** source inventory, storage decision, Docker skeleton, one sample doc through the pipeline.
+- [ ] **Phase 1 — Vertical slice:** searchable index of the last ~2 years of city council minutes (OCR + extraction + query).
+- [ ] Phase 2+: ordinances, permits, GIS layers, meeting audio (sketched in the plan).
 
 ## Could work on (backlog / ideas)
 
@@ -45,3 +53,5 @@ Living list of things we **want to work on** and **could work on**. Check items 
 - [x] Seed README, ROADMAP, and starter resource lists
 - [x] Add MIT license
 - [x] Compile list of similar repositories
+- [x] Write methodology note
+- [x] Lock Elizabethtown, KY as the first implementation target and draft Phase 0 / Phase 1 plan
