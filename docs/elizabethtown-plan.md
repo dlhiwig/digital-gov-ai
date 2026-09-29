@@ -38,25 +38,27 @@ This is the first concrete implementation project under the Digital Gov AI umbre
 - [ ] Decide storage backend: Mongo vs Azure Cosmos vs AWS DocumentDB (lean Mongo for the pilot).
 
 ### 0.2 Repo & environment
-- [ ] Create a dedicated working area in this repo (e.g. `elizabethtown/` or a sibling repo) with `data/raw`, `data/processed`, `scripts`, `docs`.
-- [ ] Dockerize a minimal pipeline skeleton (fetcher + OCR stub + store stub).
-- [ ] Add a `.env.example` and a short `CONTRIBUTING` note for the pilot.
-- [ ] Pick the OCR engine (Tesseract baseline, with an AI-OCR upgrade path).
+- [x] Create working area `elizabethtown/` with fetcher, processor, store, search, docker stubs. See `elizabethtown/README.md` and `docs/elizabethtown-minutes-index.md`.
+- [x] Dockerize a minimal pipeline skeleton (fetcher + OCR stub + store stub + search) — `elizabethtown/docker-compose.yml`.
+- [x] Add `.env.example` and short READMEs per stage.
+- [ ] Pick the OCR engine (Tesseract baseline, with an AI-OCR upgrade path) — decided: Tesseract.
+- [ ] Run one sample document (a single PDF of minutes) through fetch → OCR → store.
 
 ### 0.3 Success criteria
 - Skeleton runs in Docker locally.
 - One sample document (a single PDF of minutes) flows through fetch → OCR → store.
 - A written source inventory committed to the repo.
+- Detailed Phase 1 build plan committed.
 
 ---
 
 ## Phase 1 — First Vertical Slice
 
-*Prove the full pipeline on one document type before scaling.*
+*Prove the full pipeline on one document type before scaling. Detailed plan: `docs/elizabethtown-minutes-index.md`.*
 
 ### 1.1 Ingestion
 - [ ] Scrape or download the last ~2 years of Elizabethtown City Council minutes (PDFs/HTML).
-- [ ] Build a fetcher that respects rate limits and records source URL + retrieval date (per `docs/methodology.md`).
+- [ ] Build a fetcher that respects rate limits and records source URL + retrieval date + content hash (per `docs/methodology.md`).
 - [ ] Capture meeting audio at in-person sessions as a parallel ingestion path.
 
 ### 1.2 Processing
