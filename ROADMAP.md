@@ -18,7 +18,7 @@ First concrete implementation: an AI-ready civic data pipeline for the City of E
 
 - [x] **Phase 0.1 — Source inventory** committed (`docs/elizabethtown-source-inventory.md`).
 - [x] **Phase 1 build plan** committed (`docs/elizabethtown-minutes-index.md`) + Docker skeleton under `elizabethtown/`.
-- [ ] **Phase 0.2 — Skeleton:** fetcher + processor + store + search stubs, `docker-compose.yml`, `.env.example`.
+- [x] **Phase 0.2 — Skeleton:** fetcher + processor + store + search stubs, `docker-compose.yml`, `.env.example`.
 - [ ] **Phase 1.1 — Ingestion:** fetcher walks the Documents tree, downloads minutes, writes manifest (source URL + date + hash).
 - [ ] **Phase 1.2 — Processing:** Tesseract OCR + structured extraction (date, attendees, motions, votes, amounts, decisions).
 - [ ] **Phase 1.3 — Storage & query:** MongoDB raw + structured collections; minimal search endpoint + tiny UI.
